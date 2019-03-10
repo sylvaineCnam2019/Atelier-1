@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire client</title>
+	<link rel="stylesheet" href="client.css"/>
+	<script type="text/javascript" src="client.js"></script>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<fieldset id="formul"><legend>Client</legend>
+	<div>	
+		<form action="client.php" method="post" name="client" >
+			<div class="boutRad">
+				<input type="radio" name="genre" value="Mademoiselle" />
+				<label for="rad1">Mademoiselle</label>
+				<input type="radio" name="genre" value="Madame" />
+				<label for="rad2">Madame</label>
+				<input type="radio" name="genre" value="Monsieur" />
+				<label for="rad3">Monsieur</label>
+			</div>
+			<br><br>
+			<div class="donnee">
+				<label for="Nom" class="def">Nom :</label>
+				<input type="text" placeholder="saisissez votre nom" class="bout" id="nom" name="nom" onchange="valbutton();" onblur="valNom();" autofocus required>
+			</div>
+			<br><br>
+			<div class="donnee">
+				<label for="Prenom" class="def">Prenom :</label>
+				<input type="text" placeholder="saisissez votre prénom" class="bout" id="prenom" name="prenom"  onblur="valPrenom();" required>
+			</div>
+            <br><br>
+			<div class="donnee">
+				<label for="Adresse" class="def">Adresse :</label>
+				<TEXTAREA class="bout" id="adr" placeholder="saisissez votre adresse" name="adresse" onblur="valAdr();"></TEXTAREA>
+			</div>
+			<br><br><br>
+			<div class="donnee">
+				<label for="Ville" class="def">Ville :</label>
+				<input type="text" placeholder="saisissez votre ville" class="bout" id="ville" onblur="valVille();" name="ville" required>
+			</div>
+            <br><br>
+			<div class="donnee">
+				<label for="Code Postal" class="def">Code postal :</label>
+				<input type="text" placeholder="saisissez votre code postal" class="bout" id="cp" onblur="valCp();" name="cp" required>
+			</div>
+            <br><br>
+			<div class="donnee">
+				<label for="confirmer" class="def">CONFIRMER</label>
+				<input type="submit" value="ENVOI" class="bout" id="bouton"/>
+			</div>
+		</form>
+	</div>
+	</fieldset>
+</body>
+</html>

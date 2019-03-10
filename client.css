@@ -1,0 +1,23 @@
+#formul{
+width:350px;
+border:1px black solid;
+
+}
+
+.boutRad{
+display:inline-block;
+}
+
+.def{
+width:200px;
+}
+
+.bout{
+float:right;
+left:200px;
+width:200px;
+}
+
+#bouton{
+width:202px;
+}
